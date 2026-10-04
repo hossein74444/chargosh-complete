@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4f46e5" />
+    <title>کابینت چارگوش</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">چ</div>
+          <div>
+            <strong>کابینت چارگوش</strong>
+            <small>مدیریت پروژه، CRM و حسابداری</small>
+          </div>
+        </div>
+
+        <div class="sidebar-section-title">فضای کاری</div>
+        <nav class="nav-list" id="nav">
+          <button class="nav-item active" data-view="dashboard">داشبورد</button>
+          <button class="nav-item" data-view="projects">پروژه‌ها</button>
+          <button class="nav-item" data-view="crm">CRM مشتریان</button>
+          <button class="nav-item" data-view="accounting">حسابداری</button>
+          <button class="nav-item" data-view="kanban">برد مراحل</button>
+          <button class="nav-item" data-view="calendar">تقویم کاری</button>
+          <button class="nav-item" data-view="reports">گزارش‌ها</button>
+          <button class="nav-item" data-view="settings">تنظیمات</button>
+        </nav>
+
+        <div class="sidebar-status">
+          <span class="status-dot"></span>
+          ذخیره‌سازی محلی فعال است
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <div class="eyebrow">فضای کاری</div>
+            <h1 id="page-title">داشبورد</h1>
+          </div>
+
+          <div class="topbar-actions">
+            <button class="btn btn-secondary" id="btn-export">خروجی JSON</button>
+            <button class="btn btn-primary" id="btn-primary-action">پروژه جدید</button>
+          </div>
+        </header>
+
+        <section id="view-root" class="view-root"></section>
+      </main>
+    </div>
+
+    <div id="modal-root"></div>
+    <div id="toast" class="toast" aria-live="polite"></div>
+
+    <script src="app-config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
